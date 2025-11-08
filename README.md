@@ -8,7 +8,9 @@ O site inclui:
 - Projetos e estudos
 - Contato direto via formulário integrado com Formspree
 - Integração com modelos 3D usando Spline
-
+---
+SITE PARA VISUALIZAÇÃO:
+https://thauamarcelo.github.io/PORTIFOLIO-THAUA/
 ---
 
 ## 🚀 Tecnologias Utilizadas
