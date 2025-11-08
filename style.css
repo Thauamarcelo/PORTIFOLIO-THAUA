@@ -464,11 +464,11 @@ main {
 }
 
 @media(max-width:1100px) {
-    #menu-icon {
+    /* #menu-icon {
         display: block;
         z-index: 1005 !important;
         position: relative;
-    }
+    } */
 
     .navbar {
         position: absolute;
