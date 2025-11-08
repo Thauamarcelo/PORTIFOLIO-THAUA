@@ -39,11 +39,9 @@ body {
 }
 
 #menu-icon {
-    position: fixed;
     font-size: 3.5rem;
     color: var(--main-color);
     display: none;
-    z-index: 9999; /* garante que fique acima de tudo */
 }
 
 .logo {
@@ -59,26 +57,11 @@ body {
 }
 
 span {
-    background: linear-gradient(270deg,
-            #0a0097 20%,
-            #000000 100%);
+    background: linear-gradient(270deg, #0a0097 20%, #000000 100%);
     background-clip: text;
     color: transparent;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  background: rgba(0,0,0,0.85);
-  z-index: 9998; /* ligeiramente abaixo do botão */
-  display: none;
-}
-
-.navbar.active {
-  display: block;
-}
 .navbar a {
     font-size: 1.5rem;
     color: var(--text-color);
@@ -97,9 +80,7 @@ span {
     font-size: 1.8rem;
     padding: 1rem 2rem;
     border-radius: 3rem;
-    background: linear-gradient(270deg,
-            #0a0097 20%,
-            #000000 100%);
+    background: linear-gradient(270deg, #0a0097 20%, #000000 100%);
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -127,7 +108,6 @@ main {
 .content {
     max-width: 40rem;
     margin: 10%;
-
 }
 
 /* parar aqui */
@@ -163,35 +143,13 @@ main {
 }
 
 .home-3d {
-    
     position: absolute;
     top: 0;
     right: -20%;
     /*z-index: 100; COLOCAR NO SOCIAL-ICON */
-
 }
 
-/* COLOCAR DEPOIS .social-icons a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font: 3rem;
-    padding: 1rem;
-    background: transparent;
-    border: 2px solid var(--main-color);
-    border-radius: 50%;
-    color: var(--main-color);
-    margin: 3rem 0.5rem;
-    transition: 0.3s ease-in-out;
-}
-
-.social-icons a:hover {
-    color: #ff0000;
-    background-color: var(--main-color);
-    transform: scale(1.2)translateY(-5px);
-    box-shadow: 0 0 25px var(--main-color);
-} */
-
+/* COLOCAR DEPOIS .social-icons a { display: inline-flex; justify-content: center; align-items: center; font: 3rem; padding: 1rem; background: transparent; border: 2px solid var(--main-color); border-radius: 50%; color: var(--main-color); margin: 3rem 0.5rem; transition: 0.3s ease-in-out; } .social-icons a:hover { color: #ff0000; background-color: var(--main-color); transform: scale(1.2)translateY(-5px); box-shadow: 0 0 25px var(--main-color); } */
 .btn-group {
     display: flex;
     gap: 1.5rem;
@@ -213,8 +171,7 @@ main {
 
 .btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 25px var(--main-color),
-        0 0 50px var(--main-color);
+    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
 }
 
 .btn-group a:nth-of-type(2) {
@@ -246,14 +203,11 @@ main {
 }
 
 .about-img img:hover {
-    box-shadow: 0 0 25px var(--main-color),
-        0 0 25px var(--main-color),
-        0 0 100px var(--main-color);
+    box-shadow: 0 0 25px var(--main-color), 0 0 25px var(--main-color), 0 0 100px var(--main-color);
 }
 
 .about-content h2 {
     font-size: 7rem;
-
     text-align: left;
 }
 
@@ -290,7 +244,6 @@ main {
 .services {
     background-color: var(--bg-color);
     color: white;
-
 }
 
 .services h2 {
@@ -365,7 +318,6 @@ main {
     place-items: center;
     gap: 3rem;
     row-gap: 5rem;
-
 }
 
 .projects-card {
@@ -514,7 +466,7 @@ main {
 @media(max-width:1100px) {
     #menu-icon {
         display: block;
-        z-index: 9999 !important;
+        z-index: 1005 !important;
         position: relative;
     }
 
@@ -550,7 +502,6 @@ main {
         flex-direction: column-reverse;
         margin: 5rem 0;
         gap: 5rem;
-        
     }
 
     .home-content {
@@ -567,7 +518,6 @@ main {
         scale: 0.8;
         top: 2%;
         right: 2%;
-
     }
 
     .about {
@@ -589,10 +539,7 @@ main {
         padding: 10rem 0;
     }
 
-    /* .project .projects-box{
-        flex-direction: column;
-    } */
-
+    /* .project .projects-box{ flex-direction: column; } */
     .project {
         flex-direction: column;
         padding: 8rem 5%
